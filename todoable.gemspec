@@ -6,12 +6,11 @@ require "todoable/version"
 Gem::Specification.new do |spec|
   spec.name          = "todoable"
   spec.version       = Todoable::VERSION
-  spec.authors       = ["TODO: Write your name"]
+  spec.authors       = ["Alex Fraczak"]
   spec.email         = ["fraczakalex@gmail.com"]
 
-  spec.summary       = %q{TODO: Write a short summary, because RubyGems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.summary       = "An API wrapper around the Todoable API"
+  spec.description   = "An API wrapper around the Todoable API"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
