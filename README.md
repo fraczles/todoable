@@ -42,7 +42,7 @@ irb> client = Todoable::Client.new
 ### Routes
 Here are a list of supported routes:
 | Endpoint| Description | Method | Args | Example |
-| ------------- |:-------------| :-----| -----: | -----: | ------ |
+| ------------- |:-------------| :-----| -----: | ------ |
 |  `GET /lists` | Get all lists|  `Todoable::Client#all_lists` |  | `client.all_lists`| 
 |  `POST /lists` | Create a list|  `Todoable::Client#create_list` | `name`| `client.create_list(name: 'Chores')` |
 |  `GET /lists/:id` | Get specified list|  `Todoable::Client#get_list` | `list_id`| `client.get_list(list_id: '123')` |
