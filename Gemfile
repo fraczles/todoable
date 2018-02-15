@@ -1,4 +1,2 @@
-source 'https://rubygems.org'
-
-gem 'httparty'
-gem 'rspec'
+source "https://rubygems.org"
+gemspec

@@ -49,7 +49,11 @@ module Todoable
       self.class.post("/lists/#{list_id}/items", options)
     end
 
-    def finish_item(list_id, item_id, options: {})
+    def finish_item(list_id: nil, item_id: nil, options: {})
+      if list_id.nil? || item_id.nil?
+        raise ArgumentError, 'list_id, item_id are required'
+      end
+
       options[:headers] = protected_headers
       self.class.put("/lists/#{list_id}/items/#{item_id}/finish", options)
     end

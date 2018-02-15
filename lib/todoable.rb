@@ -28,10 +28,9 @@ module Todoable
         username: username,
         password: password
       }
-      @token = fetch_token
     end
 
-    # private
+    private
 
     def protected_headers
       refresh_token!
