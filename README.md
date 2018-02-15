@@ -41,16 +41,16 @@ irb> client = Todoable::Client.new
 
 ### Routes
 Here are a list of supported routes:
-| Endpoint| Description | Method | Args | Example |
-| ------------- |:-------------| :-----| -----: | ------ |
-|  `GET /lists` | Get all lists|  `Todoable::Client#all_lists` |  | `client.all_lists`| 
-|  `POST /lists` | Create a list|  `Todoable::Client#create_list` | `name`| `client.create_list(name: 'Chores')` |
-|  `GET /lists/:id` | Get specified list|  `Todoable::Client#get_list` | `list_id`| `client.get_list(list_id: '123')` |
-|  `PATCH /lists/:id` | Edit a specific list|  `Todoable::Client#edit_list` | `list_id`, `name`  | `client.edit_list(list_id: 123, name: 'Laundry')`|
-|  `DELETE /lists/:id` | Delete a list |  `Todoable::Client#delete_list` | `list_id`| `client.delete_list(list_id: 123)`
-|  `POST /lists/:id/items` | Add an item to a list|  `Todoable::Client#create_item` | `list_id`, `name`| `client.add_item(list_id: 123, name: 'Fold clothes')`|
-|  `PUT /lists/:id/items/:id/finish` | Mark an item as done |  `Todoable::Client#finish_item` | `list_id`, `item_id`| `client.finish_item(list_id: 123, item_id: 456)`|
-|  `DELETE /lists/:id/items/:id` | Delete an item |  `Todoable::Client#delete_item` | `list_id`, `item_id`| `client.delete_item(list_id: 123, item_id: 456)`|
+| Endpoint| Description | Method | Args | Example | 
+| ------- |:------------| :------| ---: | ------- | 
+| GET /lists | Get all lists| Todoable::Client#all_lists | | client.all_lists|
+| POST /lists | Create a list| Todoable::Client#create_list | name| client.create_list(name: 'Chores') | 
+| GET /lists/:id | Get specified list| Todoable::Client#get_list | list_id| client.get_list(list_id: '123') | 
+| PATCH /lists/:id | Edit a specific list| Todoable::Client#edit_list | list_id, name | client.edit_list(list_id: 123, name: 'Laundry')|
+| DELETE /lists/:id | Delete a list | Todoable::Client#delete_list | list_id| client.delete_list(list_id: 123) | POST /lists/:id/items | Add an item to a list| Todoable::Client#create_item | list_id, name| client.add_item(list_id: 123, name: 'Fold clothes')| 
+| PUT /lists/:id/items/:id/finish | Mark an item as done | Todoable::Client#finish_item | list_id, item_id| client.finish_item(list_id: 123, item_id: 456)| 
+| DELETE /lists/:id/items/:id | Delete an item | Todoable::Client#delete_item | list_id, item_id| client.delete_item(list_id: 123, item_id: 456)|
+
 
 
 ### Tips
