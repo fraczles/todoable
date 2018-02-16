@@ -1,4 +1,4 @@
-require 'HTTParty'
+require 'httparty'
 require 'todoable/routes'
 require 'todoable/version'
 
