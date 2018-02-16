@@ -67,6 +67,12 @@ Here are a list of supported routes:
 
 
 
+## Tests
+
+To run tests:
+```bash
+$ rspec spec
+```
 
 
 ### Tips
