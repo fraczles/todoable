@@ -24,6 +24,10 @@ $ gem install todoable-0.1.0.gem
 
 Verify if it worked in irb:
 ```ruby
+irb> # If you installed with bundler, make sure to:
+irb> require 'bundler/setup'
+=> true
+irb> # Otherwise:
 irb> require 'todoable'
 => true
 ```
