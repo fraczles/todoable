@@ -15,6 +15,19 @@ And then execute:
 
     $ bundle
 
+Or clone this repository and run:
+
+```bash
+$ gem build todoable.gemspec
+$ gem install todoable-0.1.0.gem
+```
+
+Verify if it worked in irb:
+```ruby
+irb> require 'todoable'
+=> true
+```
+
 ## Usage
 
 ### Configuration
